@@ -8,28 +8,32 @@ var player1 = {
     name: 'Arya',
     hand: getHand(),
     wins: 0,
-    losses: 0
+    losses: 0,
+    aGirl: 'has no name'
 }
 
 var player2 = {
     name: 'Sansa',
     hand: getHand(),
     wins:0,
-    losses:0
+    losses:0,
+    queen: 'in the north'
 }
 
 var player3 = {
     name: 'Jon',
     hand: getHand(),
     wins:0,
-    losses:0
+    losses:0,
+    knows: 'nothing'
 }
 
 var player4 = {
     name:'Bran',
     hand: getHand(),
     wins:0,
-    losses:0
+    losses:0,
+    spine: 'broken'
 }
 
 function playRound(playerOne, playerTwo) {
