@@ -37,6 +37,8 @@ var player4 = {
 }
 
 function playRound(playerOne, playerTwo) {
+    playerOne.hand = getHand();
+    playerTwo.hand = getHand();
     console.log(playerOne.name + ' has ' + playerOne.hand);
     console.log(playerTwo.name + ' has ' + playerTwo.hand);
     if ((playerOne.hand == 'rock' && playerTwo.hand == 'scissors')||(playerOne.hand=='paper' && playerTwo.hand=='rock')||(playerOne.hand=='scissors'&&playerTwo.hand=='paper')) {
@@ -59,8 +61,7 @@ function playGame1(playerOne,playerFour,playUntil) {
     console.log("GAME NUMBER 1")
     while (playerOne.wins<(playUntil)&&playerFour.wins<(playUntil)) {
         playRound(playerOne,playerFour);
-        playerOne.hand = getHand();
-        playerFour.hand = getHand();
+
     }
     if (playerOne.wins==playUntil) {
         return playerOne
@@ -75,8 +76,7 @@ function playGame2(playerTwo,playerThree,playUntil) {
     console.log("GAME NUMBER 2")
     while (playerTwo.wins<playUntil && playerThree.wins<playUntil) {
         playRound(playerTwo,playerThree);
-        playerTwo.hand = getHand();
-        playerThree.hand = getHand();
+
     }
     if (playerTwo.wins==playUntil) {
         return playerTwo
@@ -92,8 +92,7 @@ function playFinal(playerOne,playerTwo,playUntil) {
     playerTwo.wins =0;
     while (playerOne.wins<playUntil && playerTwo.wins<playUntil) {
         playRound(playerOne,playerTwo);
-        playerOne.hand = getHand();
-        playerTwo.hand = getHand();
+
     }
     if (playerOne.wins==(playUntil)) {
         return playerOne
