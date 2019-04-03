@@ -61,7 +61,6 @@ function playGame1(playerOne,playerFour,playUntil) {
     console.log("GAME NUMBER 1")
     while (playerOne.wins<(playUntil)&&playerFour.wins<(playUntil)) {
         playRound(playerOne,playerFour);
-
     }
     if (playerOne.wins==playUntil) {
         return playerOne
@@ -76,7 +75,6 @@ function playGame2(playerTwo,playerThree,playUntil) {
     console.log("GAME NUMBER 2")
     while (playerTwo.wins<playUntil && playerThree.wins<playUntil) {
         playRound(playerTwo,playerThree);
-
     }
     if (playerTwo.wins==playUntil) {
         return playerTwo
@@ -92,7 +90,6 @@ function playFinal(playerOne,playerTwo,playUntil) {
     playerTwo.wins =0;
     while (playerOne.wins<playUntil && playerTwo.wins<playUntil) {
         playRound(playerOne,playerTwo);
-
     }
     if (playerOne.wins==(playUntil)) {
         return playerOne
