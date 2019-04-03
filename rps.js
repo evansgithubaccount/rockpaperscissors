@@ -5,28 +5,28 @@ function getHand() {
 }
 
 var player1 = {
-    name: 'Dude',
+    name: 'Arya',
     hand: getHand(),
     wins: 0,
     losses: 0
 }
 
 var player2 = {
-    name: 'What',
+    name: 'Sansa',
     hand: getHand(),
     wins:0,
     losses:0
 }
 
 var player3 = {
-    name: 'Is',
+    name: 'Jon',
     hand: getHand(),
     wins:0,
     losses:0
 }
 
 var player4 = {
-    name:'Up',
+    name:'Bran',
     hand: getHand(),
     wins:0,
     losses:0
