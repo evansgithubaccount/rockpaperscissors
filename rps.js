@@ -26,7 +26,7 @@ var player3 = {
 }
 
 var player4 = {
-    name:'Who',
+    name:'Up',
     hand: getHand(),
     wins:0,
     losses:0
