@@ -37,8 +37,6 @@ var player4 = {
 }
 
 function playRound(playerOne, playerTwo) {
-    playerOne.hand;
-    playerTwo.hand;
     console.log(playerOne.name + ' has ' + playerOne.hand);
     console.log(playerTwo.name + ' has ' + playerTwo.hand);
     if ((playerOne.hand == 'rock' && playerTwo.hand == 'scissors')||(playerOne.hand=='paper' && playerTwo.hand=='rock')||(playerOne.hand=='scissors'&&playerTwo.hand=='paper')) {
